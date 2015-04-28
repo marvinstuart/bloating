@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+    ServerName bloating
+    ServerAlias bloating1 bloating2 bloating3 bloating4 bloating5 bloating6 bloating7 bloating8 bloating9 bloating10
+
+    WSGIDaemonProcess bloating user=pi group=pi threads=5
+    WSGIScriptAlias / /home/pi/bloating/bloating.wsgi
+
+    <Directory /home/pi/bloating/bloating>
+        WSGIProcessGroup bloating
+        WSGIApplicationGroup %{GLOBAL}
+        Order deny,allow
+        Allow from all
+    </Directory>
+</VirtualHost>
