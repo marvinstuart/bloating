@@ -9,12 +9,12 @@ Automatic Setup (with Puppet)
 -------------------------------
 
     ssh pi@[hostname]
-    git clone https://github.com/marvinstuart/BloatingSensor.git
+    git clone https://github.com/marvinstuart/bloating.git
     sudo apt-get update
     sudo apt-get upgrade
     sudo apt-get install puppet
-    chmod 755 /bloating/puppet/puppet-apply.sh
-    ./bloating/puppet/puppet-apply.sh
+    chmod 755 bloating/puppet/puppet-install.sh
+    ./bloating/puppet/puppet-install.sh
     sudo reboot 
 
 DS18B20 Wiring Diagram
