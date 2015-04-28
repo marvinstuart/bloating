@@ -13,6 +13,7 @@ Automatic Setup (with Puppet)
     sudo apt-get update
     sudo apt-get upgrade
     sudo apt-get install puppet
+    chmod 755 /bloating/puppet/puppet-apply.sh
     ./bloating/puppet/puppet-apply.sh
     sudo reboot 
 
