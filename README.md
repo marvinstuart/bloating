@@ -17,6 +17,10 @@ Automatic Setup (with Puppet)
     ./bloating/puppet/puppet-install.sh
     sudo reboot 
 
+Ignore message: 
+warning: Could not retrieve fact fqdn
+warning: Host is missing hostname and/or domain: sensor
+
 DS18B20 Wiring Diagram
 -------------------------------
 http://www.reuk.co.uk/OtherImages/raspberry-pi-ds18b20-connections.jpg
